@@ -12,12 +12,12 @@
 	<%
 	
 		int[] scores = {80, 90, 100, 95, 80};
-		int avg = 0;
+		double avg = 0.0;
 	
 		for(int i = 0; i < scores.length; i++){
 			avg += scores[i];
 		}
-		avg = avg / (scores.length + 1);
+		avg = avg / (scores.length);
 	
 	%>
 	
@@ -53,7 +53,9 @@
 	<h2>1부터 n까지의 합계를 구하는 함수 <%= getSum(50) %></h2>
 	
 	<%! 
-		String birthDay = "20010820";
+		String birthDay = "19990625";
+		int age = 2023 - Integer.parseInt(birthDay.substring(0,4)) + 1;
 	%>
+	<h2><%=birthDay %>의 나이는 <%=age %>입니다.</h2>
 </body>
 </html>
