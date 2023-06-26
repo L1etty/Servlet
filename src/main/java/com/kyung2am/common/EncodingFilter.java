@@ -1,6 +1,8 @@
 package com.kyung2am.common;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.servlet.Filter;
 import javax.servlet.FilterChain;
@@ -20,6 +22,8 @@ public class EncodingFilter implements Filter{
 		response.setCharacterEncoding("utf-8");
 		
 		chain.doFilter(request, response);
+		
+		List<String> value = new ArrayList<String>();
 		
 		
 	}
