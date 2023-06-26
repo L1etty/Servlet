@@ -11,7 +11,7 @@
 
 	<h1>길이 변환</h1>
 	
-	<form style="width: 250px" method="get" action="/jsp/test/test05.jsp">
+	<form style="width: 250px" method="post" action="/jsp/test/test05.jsp">
 		<div class="form-inline">
 			<input type="text" class="form-control col-sm-10" name="cm"><label class="col-sm-2 mt-3">cm</label>
 		</div>
