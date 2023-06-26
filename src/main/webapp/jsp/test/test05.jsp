@@ -11,44 +11,49 @@
 <body>
 	
 	<%
-		
-		
-		List<String> value = new ArrayList<String>();
 	
+		String[] units = request.getParameterValues("unit");
+	
+		//double cm = Double.parseDouble(request.getParameter("cm"));
+
 		int cm = Integer.parseInt(request.getParameter("cm"));
-	
-		if(request.getParameter("inch") != null){
-			value.add((double)cm / 2.54 + "in");
-		}
-		if(request.getParameter("yard") != null){
-			value.add((double)cm / 91.44 + "yard");
-		}
-		if(request.getParameter("feet") != null){
-			value.add((double)cm / 30.48 + "feet");
-		}
-		if(request.getParameter("meter") != null){
-			value.add((double)cm / 100 + "meter");
-		}
+
 	
 	%>
-
-
+	
 	<%!
 	
-		public String getValueString(List<String> value){
+		public String getValueString(String[] units, int cm){
 			
-			String test = "";
-		
-			for(int i = 0; i < value.size(); i++){
-				test = test + value.get(i) + "<br>";
+			String unitString = "";
+			
+			for(String i : units){
+				switch(i){
+					case "inch":
+						unitString = unitString + ((double)cm / 2.54) + " " + i + "<br>";
+						break;
+					case "yard":
+						unitString = unitString + ((double)cm / 91.44) + " " + i + "<br>";
+						break;
+					case "feet":
+						unitString = unitString + ((double)cm / 30.48) + " " + i + "<br>";
+						break;
+					case "meter":
+						unitString = unitString + ((double)cm / 100) + " " + i + "<br>";
+						break;
+					default:
+						unitString = "cm를 입력해주세요.";
+				}
 			}
 	
-			return test;
+			return unitString;
 		}
 	
 	%>
-	
-	<p><%=getValueString(value) %></p>
+	<h1>변환 결과</h1>
+	<h2><%=cm %>cm</h2>
+	<hr>
+	<h2><%=getValueString(units,cm) %></h2>
 
 </body>
 </html>

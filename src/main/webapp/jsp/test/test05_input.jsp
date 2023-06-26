@@ -16,10 +16,10 @@
 			<input type="text" class="form-control col-sm-10" name="cm"><label class="col-sm-2 mt-3">cm</label>
 		</div>
 		<div class="form-group d-flex justify-content-between mx-0 mb-0">
-			<label>인치<input type="checkbox" class="ml-1" name="inch"></label>
-			<label>야드<input type="checkbox" class="ml-1" name="yard"></label>
-			<label>피트<input type="checkbox" class="ml-1" name="feet"></label>
-			<label>미터<input type="checkbox" class="ml-1" name="meter"></label>
+			<label>인치<input type="checkbox" class="ml-1" name="unit" value="inch"></label>
+			<label>야드<input type="checkbox" class="ml-1" name="unit" value="yard"></label>
+			<label>피트<input type="checkbox" class="ml-1" name="unit" value="feet"></label>
+			<label>미터<input type="checkbox" class="ml-1" name="unit" value="meter"></label>
 		</div>
 		<button class="btn btn-success" type="submit">변환</button>
 	</form>
