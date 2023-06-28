@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+#warp{
+	width: 1200px;
+	margin: auto;
+}
+
+header{
+	height: 100px;
+}
+
+.main-menu{
+	height: 50px;
+}
+
+footer{
+	height: 100px;
+}
+
+a:hover{
+	text-decoration: none;
+}
