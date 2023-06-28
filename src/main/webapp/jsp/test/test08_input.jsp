@@ -97,7 +97,7 @@
 						<tr>
 							<td><%=books.get("id")%></td>
 							<td><img src="<%=books.get("image")%>" width="100px" alt="<%=books.get("title")%>"></td>
-							<td class="bookTitle text-primary"><a href="/jsp/test/test08.jsp?bookid=<%=books.get("id")%>&booktitle=<%=books.get("title")%>&bookauthor=<%=books.get("author")%>&bookpublisher=<%=books.get("publisher")%>&bookimage=<%=books.get("image")%>"><%=books.get("title") %></a></td>
+							<td class="bookTitle text-primary"><a href="/jsp/test/test08.jsp?bookid=<%=books.get("id")%>"><%=books.get("title") %></a></td>
 						</tr>
 				<%
 					}
