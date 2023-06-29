@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+#warp{
+	width: 1200px;
+	margin: auto;
+}
+
+header{
+	height: 100px;
+}
+
+.main-menu{
+	height: 50px;
+}
+
+.main-content{
+}
+
+.sub-content{
+}
+footer{
+	height: 100px;
+}
+
+.musictitle{
+	font-size: 50px;
+}
+
+#test1{
+	width: 100px;
+	height: 100px;
+}
+#test2{
+	width: 100px;
+	height: 100px;
+}
+
+a:hover{
+	text-decoration: none;
+}
