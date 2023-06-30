@@ -61,7 +61,9 @@ public class Ex01Controller extends HttpServlet{
 //			e.printStackTrace();
 //		}
 		
-		MysqlService mysqlService = new MysqlService();
+//		MysqlService mysqlService = new MysqlService();
+		
+		MysqlService mysqlService = MysqlService.getInstance();
 		
 		mysqlService.connect();
 		
