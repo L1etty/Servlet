@@ -23,9 +23,6 @@ public class EncodingFilter implements Filter{
 		
 		chain.doFilter(request, response);
 		
-		List<String> value = new ArrayList<String>();
-		
-		
 	}
 
 }
