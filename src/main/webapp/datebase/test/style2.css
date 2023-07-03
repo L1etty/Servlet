@@ -3,14 +3,21 @@
 .bg-carrot{
 	background-color: #E97341;
 }
+.border-carrot{
+	border-color: #E97341;
+}
+.text-carrot{
+	color: #E97341;
+}
 
 .text-size-1{
 	font-size: 20px;
 }
 
 .goods{
-	width: 400px;
+	width: 395px;
 	height: 350px;
+	margin-bottom: 7px;
 	border: 1px solid #E97341;
 }
 

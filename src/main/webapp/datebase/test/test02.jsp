@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 <link rel="stylesheet" href="style2.css" type="text/css">
 
 </head>
@@ -23,44 +23,58 @@
 				<li class="nav-item"><a href="#" class="nav-link text-size-1 text-white">마이 페이지</a></li>
 			</ul>
 		</nav>
-		<section class="main-content">
-			<article class="d-flex flex-wrap">
-				<div class="goods">
-					<img>
-					<div>[팝니다]뭐시기</div>
-					<div>가격스</div>
-					<div>판매자닉</div>
-				</div>
-				<div class="goods">
-					<img>
-					<div>[팝니다]뭐시기</div>
-					<div>가격스</div>
-					<div>판매자닉</div>
-				</div>
-				<div class="goods">
-					<img>
-					<div>[팝니다]뭐시기</div>
-					<div>가격스</div>
-					<div>판매자닉</div>
-				</div>
-				<div class="goods">
-					<img>
-					<div>[팝니다]뭐시기</div>
-					<div>가격스</div>
-					<div>판매자닉</div>
-				</div>
-				<div class="goods">
-					<img>
-					<div>[팝니다]뭐시기</div>
-					<div>가격스</div>
-					<div>판매자닉</div>
-				</div>
-			</article>
+		<section class="main-content mt-4">
+		<article>
+			<div class="row row-cols-1 row-cols-md-3 mx-n1"> <!-- 마진 X 네거티브 스페이스 -->
+			  <div class="col mb-2 px-1"> <!-- 페딩 x 1씩 늘려서 카드 크기 키움 -->
+			    <div class="card border-carrot">
+			      <img class="card-img-top">
+			      <div class="card-body">
+			        <h5 class="card-title">팝니다</h5>
+			        <p class="card-subtitle">1800000원</p>
+			        <p class="card-text text-carrot">닉네임</p>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="col mb-2 px-1">
+			    <div class="card border-carrot">
+			      <img class="card-img-top">
+			      <div class="card-body">
+			        <h5 class="card-title">팝니다</h5>
+			        <p class="card-subtitle">1800000원</p>
+			        <p class="card-text text-carrot">닉네임</p>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="col mb-2 px-1">
+			    <div class="card border-carrot">
+			      <img class="card-img-top">
+			      <div class="card-body">
+			        <h5 class="card-title">팝니다</h5>
+			        <p class="card-subtitle">1800000원</p>
+			        <p class="card-text text-carrot">닉네임</p>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="col mb-2 px-1">
+			    <div class="card border-carrot">
+			      <img class="card-img-top">
+			      <div class="card-body">
+			        <h5 class="card-title">팝니다</h5>
+			        <p class="card-subtitle">1800000원</p>
+			        <p class="card-text text-carrot">닉네임</p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
 		</section>
-		<footer class="bg-warning"></footer>
+		<footer class="d-flex justify-content-center">
+			<div class="text-muted d-flex align-items-center">
+				Copyright 2019. HONG ALL rights Reserved.
+			</div>
+		</footer>
 	</div>
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-</body>
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script></body>
 </html>
