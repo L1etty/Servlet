@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+.bg-carrot{
+	background-color: #E97341;
+}
+
+.text-size-1{
+	font-size: 20px;
+}
+
+.goods{
+	width: 400px;
+	height: 350px;
+	border: 1px solid #E97341;
+}
+
+#warp{
+	width: 1200px;
+	margin: auto;
+}
+header{
+	height: 70px;
+}
+
+.main-menu{
+	height: 50px;
+}
+
+.main-content{
+}
+
+footer{
+	height: 100px;
+}

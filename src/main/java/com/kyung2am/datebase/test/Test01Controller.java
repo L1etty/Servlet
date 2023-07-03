@@ -45,6 +45,7 @@ public class Test01Controller extends HttpServlet{
 			e.printStackTrace();
 		}
 		
+		mysqlService.disconnect();
 	}
 
 }
