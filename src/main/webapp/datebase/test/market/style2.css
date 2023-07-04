@@ -3,6 +3,9 @@
 .bg-carrot{
 	background-color: #E97341;
 }
+.bg-gray{
+	background-color: #F0F1F2;
+}
 .border-carrot{
 	border-color: #E97341;
 }
@@ -27,6 +30,10 @@
 	height: 350px;
 	margin-bottom: 7px;
 	border: 1px solid #E97341;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 .form-box{
