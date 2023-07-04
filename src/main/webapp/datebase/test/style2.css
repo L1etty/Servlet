@@ -14,11 +14,23 @@
 	font-size: 20px;
 }
 
+.storeitemimage{
+	height: 200px;
+}
+
+.card-img-size{
+	height: 200px;
+}
+
 .goods{
 	width: 395px;
 	height: 350px;
 	margin-bottom: 7px;
 	border: 1px solid #E97341;
+}
+
+.form-box{
+	width: 1000px;
 }
 
 #warp{
