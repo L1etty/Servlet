@@ -21,8 +21,8 @@
 					<div class="form-row justify-content-around">
 					
 						<div class="form-group col-md-3">
-							<select class="form-control" name="id">
-								<option selected="selected">-아이디 선택-</option>
+							<select class="form-control" name="id" id="ids"	>
+								<option value="default" selected="selected">-아이디 선택-</option>
 								<%
 									MysqlService mysqlService = MysqlService.getInstance();
 									
@@ -43,7 +43,7 @@
 							</select>
 						</div>
 						<div class="form-gorup col-md-5">
-							<input type="text" name="title" class="form-control" placeholder="제목">
+							<input type="text" id="title" name="title" class="form-control" placeholder="제목">
 						</div>
 						
 						<div class="form-group col-md-3">
@@ -69,11 +69,23 @@
 						</div>
 					</div>
 				
-					<button type="submit" class="btn btn-block bg-gray">저장</button>
+					<button type="submit" id="button" class="btn btn-block bg-gray">저장</button>
 				</form>
 			</div>
 	</section>
 	<jsp:include page="footer.jsp"/>
 	<jsp:include page="bootstrapJs.jsp"/>
+	<script>
+		$(document).ready(function(){
+			$('#button').click(function(){
+				var id = $('#ids').val();
+				var title = $('#title').val();
+				var price = $('price').val();
+				if(id == null || id == "" || id == "defualt"){
+					alert("test");
+				}
+			});
+		});
+	</script>
 </body>
 </html>
