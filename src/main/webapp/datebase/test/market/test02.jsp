@@ -32,7 +32,7 @@
 						String price = resultSet.getString("price");
 						String img = resultSet.getString("image");
 						String nickname = resultSet.getString("nickname");
-						if(img == null){
+						if(img == null || img.equals("")){
 							img = "<div class=\"card-img-top storeitemimage overflow-hidden d-flex justify-content-center align-items-center\">이미지 없음</div>";
 						}else{
 							img = "<img class=\"card-img-top card-img-size\" src=\""+ img + "\" alt=\"사진\">";
